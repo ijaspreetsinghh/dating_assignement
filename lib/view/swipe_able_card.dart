@@ -1,4 +1,3 @@
-import 'package:dating_assignement/view/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:swipable_stack/swipable_stack.dart';
 
@@ -34,6 +33,7 @@ class _SwipeableCardState extends State<SwipeableCard> {
     return SwipableStack(
       detectableSwipeDirections: const {
         SwipeDirection.down,
+        SwipeDirection.left,
       },
       controller: _controller,
       itemCount: 1,
